@@ -1,0 +1,6 @@
+{
+  "name": "A Tűzhegy Varázslója",
+  "description": "Egy interaktív magyar játékkönyv és kalandlap szimulátor Steve Jackson és Ian Livingstone klasszikus fantasy könyve alapján, teljes harcrendszerrel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,692 @@
+{
+  "1": {
+    "id": "1",
+    "text": "A fárasztó és kimerítő kétnapos gyaloglás végre véget ért. Kihúzod a kardodat a hüvelyéből, óvatosan leülsz egy mohával borított sziklára, és megkönnyebbülten felsóhajtasz. Maga a hegy is fenyegetőnek látszik, mintha egy hatalmas óriás karma tépte volna szét az éles sziklaperemeket. A csúcsán fura vörös izzás parázslik, amelyről a legendák szerint a nevét kapta: a Tűzhegy.\n\nA barlang bejárata sötéten ásít előtted. Hideg, nyirkos levegő áramlik ki belőle, pókhálók súrolják az arcodat, s a mélyből apró surranásokat hallasz – patkányok surrognak a sötétben. Meggyújtod a lámpásodat, összeszorítod a fogadat, és belépsz a rejtelmes hegy mélyébe.\n\nNéhány méter megtétele után egy sötét elágazáshoz érsz. Merre indulsz el kalandod kezdetén?",
+    "options": [
+      { "text": "Nyugat felé indulok", "next": "71" },
+      { "text": "Kelet felé veszem az irányt", "next": "218" }
+    ]
+  },
+  "71": {
+    "id": "71",
+    "text": "Óvatosan és halkan óvakodsz előre a nyugati járatban. Sötét van, s pislákoló fényt látsz egy közeli bemélyedésből. Lábujjhegyen előrelopózva bekukkantasz: egy csúf, bőrruhás Goblin őr fekszik az asztal mellett, fejét a karjára hajtva hangosan hortyog. Egy nehéz fokos van a keze ügyében.\n\nMegpróbálsz csendben elosonni mellette a folyosón, mielőtt felébredne. Tedd próbára a Szerencsédet!",
+    "luckCheck": {
+      "luckySection": "301",
+      "unluckySection": "248",
+      "text": "Szerencsés vagy és hangtalanul elosonsz mellette, vagy véletlenül belerúgsz egy apró kőbe, ami elárulja a jelenléted?"
+    },
+    "options": []
+  },
+  "248": {
+    "id": "248",
+    "text": "Jaj! Óvatlan voltál. Lépésed nyomán egy apró, laza kavics csikordul meg a talpad alatt. A Goblin őr szemei azonnal felpattannak, dühösen felmordul és már ragadja is a fokosát, hogy kettéhasítsa a fejedet! Nincs más választásod, azonnal védekezned kell!",
+    "combat": {
+      "monsterName": "Goblin Őr",
+      "skill": 6,
+      "stamina": 5,
+      "winSection": "301"
+    },
+    "options": []
+  },
+  "301": {
+    "id": "301",
+    "text": "Sikeresen magad mögött hagytad az őrséget és továbbhaladsz a barlang rideg kőfala között. Néhány méter után a folyosó nyugati oldalán egy durván faragott faajtót veszel észre. Az ajtó mögül reszelős, fojtott horkolás szűrődik ki.\n\nMit teszel?",
+    "options": [
+      { "text": "Kinyitom a faajtót és benézek a szobába", "next": "82" },
+      { "text": "Nem kockáztatok, folytatom az utamat észak felé", "next": "208" }
+    ]
+  },
+  "82": {
+    "id": "82",
+    "text": "Lassan és finoman lenyomod a kilincset, az ajtó halkan nyikorogva kitárul. Egy kicsi, fojtogató bűzű odú tárul eléd. A szoba szögletében egy szalmamatracon egy másik, zömök és visszataszító Ork őr alszik mélyen. Az asztal alatt egy apró, díszes fadobozt veszel észre.\n\nMegpróbálsz lábujjhegyen bemászni és megszerezni a dobozkát anélkül, hogy felébresztenéd az alvó fenevadat?",
+    "luckCheck": {
+      "luckySection": "147",
+      "unluckySection": "33",
+      "text": "Sikerül nesztelenül elhaladnod a matraca mellett, vagy az Ork hirtelen felriad a lépteid közeledtére?"
+    },
+    "options": []
+  },
+  "33": {
+    "id": "33",
+    "text": "Végzetes hiba! Amint a ládáért nyúlnál, véletlenül nekinyomod a csontpoharat az asztal lábának. Az alvó Ork azonnal észleli a zajt, artikulálatlan üvöltéssel pattan fel a szalmáról és puszta kézzel vetődik rád!",
+    "combat": {
+      "monsterName": "Dühös Ork",
+      "skill": 6,
+      "stamina": 4,
+      "winSection": "147"
+    },
+    "options": []
+  },
+  "147": {
+    "id": "147",
+    "text": "Sikerült! Odalopakodsz az asztal alá és büszkén emeled el a titokzatos fadobozt. Kint a folyosón, a biztonságos sötétben nyitod fel a fedelét: egyetlen fénylő aranypénzt találsz a mélyén, valamint egy rémült kisegeret, amely azonnal eliszkol a barlang résébe.\n\nA jótettedért és a sikeres akcióért megkönnyebbülsz. Kalandod folytatásához lépj vissza a folyosóra.",
+    "statChange": {
+      "gold": 1,
+      "luck": 2
+    },
+    "options": [
+      { "text": "Folytatom az utamat észak felé", "next": "208" }
+    ]
+  },
+  "208": {
+    "id": "208",
+    "text": "A folyosó egyenesen észak felé halad tovább. Néhány percnyi csendes gyaloglás után egy újabb ajtót pillantasz meg a falban. Hallgatózol, de semmi nesz nem szűrődik ki odabentről.\n\nMit teszel?",
+    "options": [
+      { "text": "Kinyitom az ajtót és átkutatom a helyiséget", "next": "397" },
+      { "text": "Úgy döntök, továbbhaladok észak felé", "next": "363" }
+    ]
+  },
+  "397": {
+    "id": "397",
+    "text": "Kinyitod a nehéz ajtót. Egy pici, áporodott levegőjű szobába lépsz be. A padló kőből van, a koszos sarkokban pókok tanyáznak. A helyiség közepén egy düledező faasztalt találsz, rajta egy leégett gyertya csonkja áll. Az asztal alatt egy gyanús csatos fadoboz hever.\n\nKinyitod és belenézel a dobozba?",
+    "options": [
+      { "text": "Kinyitom a fadobozt", "next": "240" },
+      { "text": "Nem nyúlok hozzá, inkább távozom észak felé", "next": "363" }
+    ]
+  },
+  "240": {
+    "id": "240",
+    "text": "Amint felemeled a doboz tetejét, halk csörgést hallasz. Legnagyobb döbbenetedre egy villámgyors, pikkelyes Kígyó szökken ki a mélyéből, egyenest a torkodat célozva méregfogaival! Hirtelen hátraugrasz, előrántod a kardodat és csapásra emeled!",
+    "combat": {
+      "monsterName": "Mérges Kígyó",
+      "skill": 5,
+      "stamina": 2,
+      "winSection": "145"
+    },
+    "options": []
+  },
+  "145": {
+    "id": "145",
+    "text": "A Kígyó kettévágva terül el a padlón. Miután kifújod a levegőt, óvatosan átkutatod a doboz alját: egy csillogó, nehéz bronzszínű kulcsot találsz, amelybe jól láthatóan a 9-es számot vésték! Ez biztosan fontos lesz egy későbbi lakatnál!\n\nBizakodva zsebre teszed a kulcsot, s kapsz +1 Szerencsét is.",
+    "statChange": {
+      "luck": 1
+    },
+    "keyGain": 9,
+    "options": [
+      { "text": "Visszatérek a járatba és megyek tovább", "next": "363" }
+    ]
+  },
+  "363": {
+    "id": "363",
+    "text": "Továbbhaladva a sötét folyosón, megcsap a sör és a pálinka bűzös szaga. Jobb oldalon egy meglehetősen elhasznált, rozsdás sarokpántú ajtó áll. Bentől hirtelen artikulálatlan dorbézolás, fülhasító Ork dalolás és üvegek koccanása szűrődik ki.\n\nMit fogsz tenni?",
+    "options": [
+      { "text": "Kivonom a kardomat és berontok az ajtón", "next": "370" },
+      { "text": "Megpróbálok nesztelenül továbbosonni észak felé", "next": "42" }
+    ]
+  },
+  "370": {
+    "id": "370",
+    "text": "Berúgod az ajtót és berontasz a terembe! Bent egy koszos asztal körül két böhöm nagy, bibircsókos képű Ork dülöngél a székében. Teljesen részegre itták magukat valami füstölgő grogtól. Meglátnak, s vicsorogva nyúlnak a rozsdás bárdjaik után, de a szesz alaposan lelassította a reflexeiket!",
+    "options": [
+      { "text": "Megtámadom a részeg Orkokat!", "next": "116" },
+      { "text": "Hirtelen visszacsapom az ajtót és elmenekülök", "next": "42" }
+    ]
+  },
+  "116": {
+    "id": "116",
+    "text": "Rárontasz az Orkokra! Mivel a fenevadak rendkívül részegek, a harc során végig +2 pontnyi bónuszt kapsz a Támadóerődhöz! Készülj fel!",
+    "combat": {
+      "monsterName": "Első Részeg Ork",
+      "skill": 5,
+      "stamina": 4,
+      "winSection": "378"
+    },
+    "options": []
+  },
+  "378": {
+    "id": "378",
+    "text": "Hatalmas harcban legyőzted a részegeket! Amint a fújtatva földön fekvő testeket átkutatod, az asztal alatt egy kis faládikát találsz. Benne egy régi, poros jegyzetfüzet fekszik, amit Farrigo Di Maggio írt. Izgatottan lapozod át, s az utolsó oldalon rábukkansz a Sárkányok Tüze elleni legendás varázsigére:\n\n'Ekil Erif, Ekam Erif, Erif Erif Di Maggio!'\n\nA varázshatást azonnal megjegyzed magadban, hátha szembe kell nézned a lángokkal a hegy gyomrában! Kapsz +1 Szerencsét is.",
+    "spellTaught": true,
+    "statChange": {
+      "luck": 1
+    },
+    "options": [
+      { "text": "Elrakom a jegyzetet és visszatérek a járatba", "next": "42" }
+    ]
+  },
+  "42": {
+    "id": "42",
+    "text": "A folyosó hamarosan véget ér, s egy hármas elágazáshoz lyukadsz ki. Balra nyugati irányba egy gyanús nyirkos átjáró hívogat, jobbra kelet felé pedig egy szárazabb, jól kijárt járat vezet.\n\nMerre indulsz tovább?",
+    "options": [
+      { "text": "Elindulok balra, nyugat felé", "next": "257" },
+      { "text": "Elindulok jobbra, kelet felé", "next": "113" }
+    ]
+  },
+  "257": {
+    "id": "257",
+    "text": "Nyugati irányba haladva a folyosó egy vastag gerendákból ácsolt kapuhoz vezet. Amikor közeledsz, a kapu mögül dühös ordibálás s könyörtelen ostorcsapások fojtogató hangjai hallatszanak. Valakit kegyetlenül kínoznak odabent!",
+    "options": [
+      { "text": "Rárontok a kínzókra az ajtón keresztül", "next": "168" },
+      { "text": "Nem akarok bajt, inkább visszafordulok a kereszteződéshez", "next": "293" }
+    ]
+  },
+  "168": {
+    "id": "168",
+    "text": "Beboltolod az ajtót és berontasz! Egy borzalmas kínzókamrában találod magad. Két apró tortúramester egy fogoly Törpét kínoz, de a Törpe sajnos már kiszenvedett. A dühös Ork Törzsfőnök éktelen haragra gerjed a zavarásod láttán, s csatlósával együtt feléd lendíti a korbácsát!",
+    "options": [
+      { "text": "Kardot rántok a Törzsfőnök ellen!", "next": "372" }
+    ]
+  },
+  "372": {
+    "id": "372",
+    "text": "Megkezdődik a kegyetlen viadal a kínzókamra kellős közepén!",
+    "combat": {
+      "monsterName": "Ork Törzsfőnök",
+      "skill": 7,
+      "stamina": 6,
+      "winSection": "21"
+    },
+    "options": []
+  },
+  "21": {
+    "id": "21",
+    "text": "A Törzsfőnök holtan roskad össze a padlóra. A halott Orkok vérének zöld színe undorító szagot áraszt a szobában. Odalépsz a sarokban heverő masszív tölgyfa ládához, amelyet egy vastag vaslakat tart szorosan lezárva.\n\nMit teszel?",
+    "options": [
+      { "text": "Megpróbálom a kardom erejével lefeszíteni a lakatot", "next": "339" },
+      { "text": "Otthagyom a ládát és visszatérek a főútvonalra", "next": "293" }
+    ]
+  },
+  "339": {
+    "id": "339",
+    "text": "Minden erőddot és kardod élét bevetve megpróbálod szétfeszíteni a makacs zárat. De jaj! Amint a zár hirtelen elpattan, halk kattanás kíséretében egy rejtett mérgezett dárda lövell ki a láda belső csapjából egyenesen a gyomrod felé! \n\nA dárda hevesen megvágja a bőrt. Dobj egy kockával, hogy megtudd, mekkora sérülést szenvedtél el a méregtől!",
+    "options": [
+      { "text": "Dobok a sebzés kiszámításához", "next": "201" }
+    ]
+  },
+  "201": {
+    "id": "201",
+    "text": "Sajgóm fejeddel sebtiben bekötözöd a sérülésedet, és óvatosan kiemeled a láda tartalmát. Legnagyobb örömedre 25 csillogó aranypénzt találsz a dárda csapája mellett, s a sarokban egy csábító zöld palackot veszel észre, amelyre a 'Láthatatlanság Itala' feliratot vésték!\n\n(A Láthatatlanság Itala bekerül a felszerelésed közé: a jövőben segít elkerülni bizonyos őröket!)",
+    "statChange": {
+      "gold": 25,
+      "stamina": -2
+    },
+    "itemGain": ["Láthatatlanság Itala"],
+    "options": [
+      { "text": "Összeszedem a zsákmányt és visszamegyek a kereszteződéshez", "next": "293" }
+    ]
+  },
+  "293": {
+    "id": "293",
+    "text": "Visszatérsz a korábbi elágazáshoz. Most a másik járatot követve, kelet felé veszed az irányt.",
+    "options": [
+      { "text": "Haladok előre kelet felé", "next": "113" }
+    ]
+  },
+  "113": {
+    "id": "113",
+    "text": "A keleti járat száraz kőfalai mentén haladsz tovább. Kis idő múltán egy újabb kereszteződéshez érkezel. Észak felé egy vastag tölgyfa ajtót találsz a falba süllyesztve, kelet felé pedig távoli vízmorajláshoz vezet az út.\n\nMerre indulsz?",
+    "options": [
+      { "text": "Megvizsgálom az északi ajtót", "next": "285" },
+      { "text": "Folytatom az utamat egyenesen keletnek", "next": "78" }
+    ]
+  },
+  "285": {
+    "id": "285",
+    "text": "Fülelj és figyelj! Az ajtóhoz lopózva közelíted a füled a kulcslyukhoz. Legnagyobb rémületedre egy gyenge, fojtott férfihang siralmát hallod odabentről, aki kétségbeesetten segítségért kiált!\n\nMit fogsz tenni?",
+    "options": [
+      { "text": "Nekifeszülök és megpróbálom betörni az ajtót", "next": "213" },
+      { "text": "Gyanúsnak találom, mész tovább a sötét folyosón", "next": "314" }
+    ]
+  },
+  "213": {
+    "id": "213",
+    "text": "Minden izmodat megfeszítve, vállal nekirontasz a nehéz, vasalt ajtónak! Tedd próbára az Ügyességedet! Dobj két kockával. Ha a dobott összeg kevesebb vagy egyenlő az Ügyességeddel, bejutsz! Különben csúnyán lehorzsolod a válladat.",
+    "options": [
+      { "text": "Nekidőlök az ajtónak és dobok!", "next": "155" }
+    ]
+  },
+  "155": {
+    "id": "155",
+    "text": "Az ajtó egyetlen hatalmas dörrenéssel szakad be előtted! A szobában porszemek szállnak fel a lámpád fényében. Ez egy rég elfeledett titkos fegyverkamra! A fali süllyesztőben egy gyönyörű, fém vasalt pajzsot pillantasz meg, amelynek közepén egy arany félhold alakja tündököl. Ez a bűvös 'Holdpajzs'!\n\n(A pajzsot a hátizsákodba teszed. A Holdpajzs viselése esetén, ha a harcban megsebeznek, dobhatsz egy kockával: ha 6-ost dobsz, a pajzs elnyeli a csapást s elkerülöd a sebet!)",
+    "itemGain": ["Holdpajzs"],
+    "options": [
+      { "text": "Megtisztítom a pajzsot és visszatérek a járatba", "next": "314" }
+    ]
+  },
+  "314": {
+    "id": "314",
+    "text": "Továbbhaladsz a sötét járatokon keresztül. Néhány méter megtétele után egy bezárt vasrácshoz lyukadsz ki, amely teljesen elállja az utat. Nem látsz rajta kilincset, de a tőled jobbra eső kőfalon két fémből öntött fogantyút találsz.\n\nMelyik kart húzod meg?",
+    "options": [
+      { "text": "Meghúzom a jobb oldali fogantyút", "next": "128" },
+      { "text": "Meghúzom a bal oldali fogantyút", "next": "243" }
+    ]
+  },
+  "243": {
+    "id": "243",
+    "text": "Jaj! Amint meghúzod a bal oldali fogantyút, egy éles kattanással egy rejtett borotvapenge vágódik ki a kőrésből egyenesen a kezed felé, és mély sebet ejt rajta! \n\nA fájdalmas sérülés komolyan rontja a vívótudásodat! \n\n(-1 ÜGYESSÉG és -2 ÉLETERŐ pontot veszítesz a sérülés miatt.)",
+    "statChange": {
+      "skill": -1,
+      "stamina": -2
+    },
+    "options": [
+      { "text": "Összeszorítom a fogam és meghúzom a másik kart is", "next": "128" }
+    ]
+  },
+  "128": {
+    "id": "128",
+    "text": "Meghúzod a jobb oldali kart. Hirtelen mély morajlás rázza meg a talpadat, s a súlyos fém rácsos kapu csikorogva emelkedik fel a mennyezetbe! Szabaddá vált az út!\n\nAz átjáró túlsó oldalán a folyosó kettéágazik: mehetsz nyugatnak egy kellemesebb járatba, vagy mehetsz keletre az ismeretlenbe.",
+    "options": [
+      { "text": "Nyugati irányba fordulok", "next": "235" },
+      { "text": "Keleti irányba indulok", "next": "323" }
+    ]
+  },
+  "235": {
+    "id": "235",
+    "text": "Nyugat felé fordulva a levegő egyre hűvösebbé és frissebbé válik. A kanyarnál egy mesés fatörzsből kifaragott pad áll, fölötte egy fali táblával:\n\n'Fáradt vándor, pihend itt ki magad!'\n\nKiváló helyszínnek tűnik egy kis békés megállásra.",
+    "options": [
+      { "text": "Leülök a padra pihenni s falatozni", "next": "15" },
+      { "text": "Nem akarom vesztegetni az időmet, sietek tovább keletre", "next": "323" }
+    ]
+  },
+  "15": {
+    "id": "15",
+    "text": "Leülsz a hűvös, mohás padra és kinyitod a hátizsákodat. Amint megpihensz, érzed, hogy a mágikus áramlatok teljesen átjárják a testedet: a fájdalmak elszállnak belőled s fenségesen megnyugszol!\t\n\n(+2 ÉLETERŐ pontot kapsz büszkén, és ha korábban veszítettél volna el az Ügyességedből, +1 ÜGYESSÉG pont is visszatér!)",
+    "statChange": {
+      "skill": 1,
+      "stamina": 2
+    },
+    "options": [
+      { "text": "Újult erővel felállok és elindulok keletnek", "next": "323" }
+    ]
+  },
+  "323": {
+    "id": "323",
+    "text": "Kelet felé tartva a folyosó talaja egyre rázósabbá válik, majd egy elágazáshoz érsz. Bal kéz felől egy zordon, sötét fém ajtó nyílik baljóslatúan.\n\nMit teszel?",
+    "options": [
+      { "text": "Kinyitom a sötét fém ajtót", "next": "255" },
+      { "text": "Elkerülöm az ajtót és haladok tovább északra", "next": "218" }
+    ]
+  },
+  "255": {
+    "id": "255",
+    "text": "Belépsz az ajtón. Egy kőfaragványokkal gazdagon díszített, tágas terembe jutsz. A terem túlsó sarkában egy kolosszális méretű, sötét fémből készült küklopsz szobor áll mozdulatlanul. Az egyetlen szeme helyén egy hatalmas fénylő, vörös Drágakő csillog elképesztő fénnyel!\n\nMás kijárat nincs, a gyönyörű ékkő azonban hatalmas kísértésbe ejt.",
+    "options": [
+      { "text": "Megpróbálom kibányászni az értékes ékkövet a szoborból", "next": "338" },
+      { "text": "Nem nyúlok hozzá, inkább óvatosan távozom", "next": "93" }
+    ]
+  },
+  "338": {
+    "id": "338",
+    "text": "Odalépsz a vashatósághoz és megragadod az ékkövet. Ám amint megérinted, rémisztő, metálos csikorgás rázza meg a termet: a fém Küklopsz hirtelen felemeli izzó fejét, s életre kelve súlyos vasöklét a magasba emelve rád ront!",
+    "combat": {
+      "monsterName": "Vas Küklopsz",
+      "skill": 10,
+      "stamina": 10,
+      "winSection": "75"
+    },
+    "options": []
+  },
+  "75": {
+    "id": "75",
+    "text": "Fenséges győzelem! A Vas Küklopsz hatalmas zörejjel dől össze a márványpadlón. Sikerül kivájnod a csodaszép Drágakövet a homlokából (melynek értéke legalább 50 arany!), s a fém mellvért üregéből kieső aprócska bronzszínű kulcsot is magadhoz veszed, amelyre a legfontosabb 111-es szám van rágravírozva!\n\nA hatalmas fogás felvillanyoz (+3 Szerencséd is növekszik).",
+    "statChange": {
+      "luck": 3
+    },
+    "keyGain": 111,
+    "itemGain": ["Vas Küklopsz Ékköve"],
+    "options": [
+      { "text": "Távozom és elindulok északnak a járatban", "next": "93" }
+    ]
+  },
+  "93": {
+    "id": "93",
+    "text": "Visszatérsz a folyosóra, amely most észak és északkelet felé kanyarodik. Hirtelen egy tágas, poros kőteremben találod magad. Egy őrült, cafatokba burkolózott vad Barbár ugrik elő a sötétből, feje felett egy gigantikus kétélű csatabárdot forgatva, s üvöltve feléd rohan!",
+    "combat": {
+      "monsterName": "Őrült Barbár",
+      "skill": 7,
+      "stamina": 6,
+      "winSection": "273"
+    },
+    "options": []
+  },
+  "273": {
+    "id": "273",
+    "text": "A harc után dühösen fújtatva állsz a legyőzött Barbár felett. A szoba sarkában egy ócska fa ládára bukkansz, amiben egy nehéz fapöröly és öt darab, hegyesre esztergált tölgyfa cövek rejtőzik!\n\n(A fapörölyt és a cöveket elteszed a hátizsákodba: ezek létfontosságú fegyverek lehetnek a sötét szörnyek és vámpírok ellen!)",
+    "itemGain": ["Fakalapács és Cövek"],
+    "options": [
+      { "text": "Zsebre teszem a cövekeket és megyek északnak", "next": "189" }
+    ]
+  },
+  "189": {
+    "id": "189",
+    "text": "Az ajtó egy rövid folyosó után egy csodálatos, hófehér falú szobába vezet. A márványpadló patyolattiszta, a fenséges szoba falain négy óriási, sötét tónusú festmény lóg, amelyek egy-egy rejtélyes varázslót ábrázolnak.\n\nMit teszel?",
+    "options": [
+      { "text": "Egyenesen átszaladok a szobán az északi ajtó felé", "next": "90" },
+      { "text": "Megállok alaposabban megvizsgálni a festményeket", "next": "25" }
+    ]
+  },
+  "25": {
+    "id": "25",
+    "text": "Odalépsz a képekhez s meborzong a hátad. Leolvasod a kárpitozott névtáblát a nyugati falon: a festmény magát Zagort, a hegy félelmetes Varázslóját ábrázolja! Amint belenézel a kép sötét tekintetébe, úgy érzed, mintha a portré fagyos bűvereje kiszívná belőled a bátorságot s elgyengítené a harci reflexeidet!\n\n(-1 ÜGYESSÉG pontot veszítesz a rémülettől s a bénító hipnotikus hatástól!)",
+    "statChange": {
+      "skill": -1
+    },
+    "options": [
+      { "text": "Megpróbálok valamit bevetni az aranykeretes kép bűvölete ellen", "next": "340" },
+      { "text": "Megijedve elmenekülök az északi ajtón keresztül", "next": "90" }
+    ]
+  },
+  "340": {
+    "id": "340",
+    "text": "Gyorsan végigkutatod a hátizsákodat valami bűvös vagy fényes dolog után, ami megtörheti a festményből sugárzó sötét hipnotikus hatást.",
+    "options": [
+      { "text": "Felmutatom a Küklopsz izzó Ékkövét!", "next": "31", "requiresItem": "Vas Küklopsz Ékköve" },
+      { "text": "Sajttal próbálom megdobni a varázsló képét", "next": "90" }
+    ]
+  },
+  "31": {
+    "id": "31",
+    "text": "Elkapod az asztalról és magasba tartod a bűvös Küklopsz Szemét! A vörös Drágakő hirtelen vakító fénysugarat bocsát ki magából, amely egyenesen felperzseli Zagor arcát a képen! A hipnotikus rabság azonnal szertefoszlik s visszakapsz +2 ÜGYESSÉG pontot a visszanyert magabiztosságoddal!",
+    "statChange": {
+      "skill": 2
+    },
+    "options": [
+      { "text": "Büszkén áthaladok az északi ajtón", "next": "90" }
+    ]
+  },
+  "90": {
+    "id": "90",
+    "text": "Az északi ajtó egy nagyon keskeny alagútba vezet. Az út mentén egy kis természetes kőbemélyedést találsz, ahol kicsit megpihenhetsz és ehetsz az élelmiszeredből. \n\nHaladsz tovább észak felé.",
+    "options": [
+      { "text": "Továbbmegyek előre a folyosón", "next": "253" }
+    ]
+  },
+  "253": {
+    "id": "253",
+    "text": "A folyosó végén egy kis kőpadlójú szobába jutsz. A szoba egyik sarkában hatalmas kőtörmelék s por halmozódott fel az évek során. A kövek között fura formájú fadarabok sejlenek fel.\n\nMit teszel?",
+    "options": [
+      { "text": "Átkutatom a gyanús törmelék kupacot", "next": "328" },
+      { "text": "Figyelmen kívül hagyom, megyek tovább északra", "next": "73" }
+    ]
+  },
+  "328": {
+    "id": "328",
+    "text": "Gondosan szétválogatod a köveket. A porból két darab Y-alakú, puha vörös fadarabot bányászol ki. Olyan puha fából készültek, mintha a folyó mosta volna ki őket a partra. \n\nElteszed a mágikus formájú fuskákat, s továbbhaladsz északra.",
+    "itemGain": ["Y-alakú fadarabok"],
+    "options": [
+      { "text": "Elindulok az északi járat felé", "next": "73" }
+    ]
+  },
+  "73": {
+    "id": "73",
+    "text": "A folyosó sötét kőpadlója hamarosan vastag, sárgás homokrétegbe vált. Amint lépkedsz, zúgó, rekedt csobogást és vad folyó hömpölygését hallod gyanúsan a közeledből. Kilépsz a sötét járatból, s a hatalmas Dungeon-folyó déli partján találod magad!",
+    "options": [
+      { "text": "Közelebb lépek a sötét víz partjához", "next": "218" }
+    ]
+  },
+  "218": {
+    "id": "218",
+    "text": "Egy hatalmas, sötét föld alatti tó és folyó partján állsz. A fekete víztükör előtt négyféleképpen is megpróbálhatsz átkelni a túlpartra:\n\n1. Balra egy rozsdás harang lóg: 'Kompszolgálat 3 arany. Kérjük csengetni!'.\n2. A tutajon átcsáklyázol.\n3. Megkockáztatod az átkelést a roskatag, fa ívekből álló öreg hídon.\n4. Egyszerűen beleugrasz és átúszol az életveszélyes jéghideg áramlatban.",
+    "options": [
+      { "text": "Meghúzom a harangkötelet s csengetek a révésznek", "next": "3" },
+      { "text": "Elindulok a roskatag hídon át", "next": "209" },
+      { "text": "Belevetem magam a jéghideg vízbe és átúszok", "next": "316" }
+    ]
+  },
+  "3": {
+    "id": "3",
+    "text": "A rozsdás harang fojtott, nehéz hangon zendül meg. Néhány feszült perc múltán egy apró, ráncos vénséges öregember evez oda hozzád evezős csónakban. Halkan kiköt a parton, eléd sántikál s fura hangon követeli a fizetséget:\n\n'- Infláció van, herceg! 3 arany az átkelés ára! -'\n\nMit válaszolsz a kapzsi révésznek?",
+    "options": [
+      { "text": "Kifizetem a 3 aranypénzt a csónakért", "next": "272" },
+      { "text": "Megfenyegetem a fegyveremmel a haramiát!", "next": "127" }
+    ]
+  },
+  "272": {
+    "id": "272",
+    "text": "A révész megnyugszik, mohón zsebre vágja a 3 aranyat, s morogva felsegít a csónakba. Csendben átevez veled a fagyos felhők alatt, s a túlsó északi parton partra szállsz. Amint kilépsz, az öreg némán visszafordul.",
+    "statChange": {
+      "gold": -3
+    },
+    "options": [
+      { "text": "Körülnézek az északi parton", "next": "7" }
+    ]
+  },
+  "127": {
+    "id": "127",
+    "text": "Megpróbálod durván megfenyegetni a kardoddal a vénembert, ám az éktelen haragra gerjed! Szemed láttára elkezd torzulni: megnyúlik a teste, arca sötét, dús fekete szőrbe borul, szemfogai ijesztően megnőnek... Egy vérszomjas Farkasemberré alakul át és azonnal rád ront!",
+    "combat": {
+      "monsterName": "Farkasember Révész",
+      "skill": 8,
+      "stamina": 8,
+      "winSection": "342"
+    },
+    "options": []
+  },
+  "342": {
+    "id": "342",
+    "text": "A félelmetes Farkasember nagy hörgéssel roskad össze. Halála pillanatában visszaváltozik emberré, majd semmivé foszlik a porban. Zsebeiben megtalálod az elcsalt 2 aranyat, s békésen átcsónakázol a csónakján az északi partra.\n\nKapsz +2 Szerencsét is a bátor tettért.",
+    "statChange": {
+      "gold": 2,
+      "luck": 2
+    },
+    "options": [
+      { "text": "Partra szállok az északi oldalon", "next": "7" }
+    ]
+  },
+  "209": {
+    "id": "209",
+    "text": "Óvatosan rálépsz az öreg fahidacskára. Amint a közepéhez érsz, egy korhadt deszka nagy reccsenéssel roppan ketté a súlyod alatt! \n\nTedd próbára a Szerencsédet! Ha szerencsés vagy (1-5-öt dobsz egy kockával), megkapaszkodsz s átszaladsz. Ha 6-ost dobsz, menthetetlenül belezuhansz a folyóba!",
+    "options": [
+      { "text": "Dobok az egyensúly megtartásához", "next": "316" }
+    ]
+  },
+  "316": {
+    "id": "316",
+    "text": "Csobbanás! A folyó vize jéghideg, s az erős sodrás gyanúsan magával ragad a mélység felé. Ráadásul észreveszed, hogy a vízben éhes, borotvaéles fogú Piranhák rajzanak körülötted! \n\nTedd próbára az Életerődet! Dobj két kockával. Ha a dobott összeg kevesebb vagy egyenlő az Életerőddel, sikerül partra küzdened magad és elkerülöd a legrosszabbat. Különben megtámadnak a halak!",
+    "options": [
+      { "text": "Kifelé úszom a vízből s dobok!", "next": "158" }
+    ]
+  },
+  "158": {
+    "id": "158",
+    "text": "Borzalmas harapások hasítanak a testedbe! Az éhes Piranhák rajként vetik magukat rád a jéghideg víz közepén! Ki kell küzdened magad ellenük a homokpadra!",
+    "combat": {
+      "monsterName": "Piranha Raj",
+      "skill": 5,
+      "stamina": 5,
+      "winSection": "7"
+    },
+    "options": []
+  },
+  "7": {
+    "id": "7",
+    "text": "Végre kijutsz és kimerülten rogysz le az északi part simogató sárga homokjára. Miután kifújod magad és kiszárítod a fáklyádat, látod, hogy a túlpartról három különböző út ágazik el:\n\n1. Észak-nyugat felé egy keskeny, szűk nyílás hívogat.\n2. Középen egy kolosszális, vastag vasalt faajtó zárja a barlangfalat.\n3. Kelet felé haladhatsz tovább a kavicsos folyópart mentén.",
+    "options": [
+      { "text": "Az észak-nyugati keskeny nyílást választom", "next": "271" },
+      { "text": "Megpróbálok bejutni a középső nagy faajtón", "next": "104" },
+      { "text": "Elindulok keletnek, a folyópart mentén", "next": "113" }
+    ]
+  },
+  "271": {
+    "id": "271",
+    "text": "A keskeny járat hamarjában szűkülni kezd, majd egy masszív vasajtónál ér véget, amin nem látsz se kilincset, se zárat, s egy titkos zsinór elszakadása elárasztja gázzal a szobát! Elájulsz a fojtogató gáztól, s elájulásod után messze ébredsz fel... -> 122",
+    "options": [
+      { "text": "Kinyitom a szemeimet s feleszmélek", "next": "122" }
+    ]
+  },
+  "104": {
+    "id": "104",
+    "text": "Lassan kinyitod a fém faajtót s belépsz egy sötét, csupasz szájú folyosóra. Ám hirtelen, még mielőtt reagálhatnál, egy sötét bunkó vagy kő csapódik a fejed tetejére hátulról! \n\nÖsszeesel a bénító ütéstől. (-2 ÉLETERŐ pontot veszítesz s látomásos álom után ébredsz...) -> 122",
+    "statChange": {
+      "stamina": -2
+    },
+    "options": [
+      { "text": "Magamhoz térek csillagokat látva", "next": "122" }
+    ]
+  },
+  "122": {
+    "id": "122",
+    "text": "Lassan vonszolod fel magad a fagyos padlóról. Körülnézve döbbenten látod, hogy egy hátborzongató, kriptaszerű zombi-barlangban vagy! A terem közepén négy borzalmas, kékes-szürke s rothadó bőrű Zombi áll teljes mozdulatlansággal, de amint neszt hallanak, üveges tekintetüket feléd fordítják s fegyvereiket lóbálva indulnak el feléd!\n\nMit teszel ebben a lidérces helyzetben?",
+    "options": [
+      { "text": "Kardot rántok s megtámadom a torzszülötteket!", "next": "282" },
+      { "text": "Megpróbálok csöndben visszakúszni a déli ajtón át", "next": "7" }
+    ]
+  },
+  "282": {
+    "id": "282",
+    "text": "A szörnyetegek hideg, értelem nélküli dühvel rontanak rád! Egyesével kell megvívnod velük a halálos harcot a kriptában!",
+    "combat": {
+      "monsterName": "Első Csontkeretes Zombi",
+      "skill": 7,
+      "stamina": 6,
+      "winSection": "115"
+    },
+    "options": []
+  },
+  "115": {
+    "id": "115",
+    "text": "Hatalmas, elsöprő diadal! Mind a négy Zombi megsemmisülve és cafatokban hever a hideg kriptapadlón. Kifújva a gőzt, lehetőséged van átkutatni a halottakat, vagy megvizsgálni a sarokban pihenő gyanús, barna folyadékkal teli tölgyfahordókat.",
+    "options": [
+      { "text": "Alaposan átkutatom az elrongyolódott tetemeket", "next": "313" },
+      { "text": "Megvizsgálom a rumos-szagú barna hordókat", "next": "330" }
+    ]
+  },
+  "313": {
+    "id": "313",
+    "text": "Átkutatod az egyik zombi cafatjait s megakad a szemed a nyakában lévő, nehéz láncon függő Ezüst Kereszten (Ezüstalbáró)! Ez egy bűvös, tiszta szent ezüst kereszt, ami a legendák szerint az egyetlen fegyver, ami sakkban tarthatja a barlang gonosz szellemeit s a vérszívó Vámpírt!\n\nBizakodva veszed a nyakadba s szerzel +1 Ügyességet és +1 Szerencsét is a megnyugvás miatt.",
+    "statChange": {
+      "skill": 1,
+      "luck": 1,
+      "gold": 8
+    },
+    "itemGain": ["Ezüst Kereszt"],
+    "options": [
+      { "text": "Zsebre teszem a keresztet s megyek északnak", "next": "81" }
+    ]
+  },
+  "330": {
+    "id": "330",
+    "text": "Megszagolod a hordókat: fenséges, erjesztett rum illata árad belőlük! Belemeríted a tenyeredet és mohón nagyokat nyelsz az erős párlatból. Csodálatos melegség önti el a tagjaidat, a sebek összeforrnak s fenségesen felfrissülsz.\n\n(+6 ÉLETERŐ pontot kapsz büszkén s +1 Szerencsét is!)",
+    "statChange": {
+      "stamina": 6,
+      "luck": 1
+    },
+    "options": [
+      { "text": "Bátran észak felé veszem az irányt", "next": "81" }
+    ]
+  },
+  "81": {
+    "id": "81",
+    "text": "A folyosó egy fagyos, fojtó hangulatú, kriptaszerű szentélybe torkollik. A falon rituális fekete drapériák függenek, s a központi kőoltár mögötti hatalmas, díszes koporsó fedele elképesztő reccsenéssel vágódik fel! \n\nEgy magas, hófehér bőrű, fagyos tekintetű nemesi köpenyes Vámpír emelkedik fel belőle, vicsorítva rád parancsol, hogy lépj közelebb s add át neki az elmédet!",
+    "options": [
+      { "text": "Felmutatom az Ezüst Keresztet a cövekkel és támadok!", "next": "17", "requiresItem": "Ezüst Kereszt" },
+      { "text": "Közönséges fegyverrel, kivont karddal rontok rá!", "next": "279" }
+    ]
+  },
+  "279": {
+    "id": "279",
+    "text": "Sajnálatos módon a Vámpír egy természetfeletti szörnyeteg, akit a közönséges acél fegyverek egyáltalán nem fognak! Kardod szinte hatástalanul pattan le dús fémruhájáról. Gúnyos kacagással ragad meg, s hegyes fogaival kioltja az életedet...\n\nSajnáljuk, a kalandod itt tragikus vereséggel véget ért.",
+    "options": []
+  },
+  "17": {
+    "id": "17",
+    "text": "Magasba tartod a tündöklő Ezüst Keresztet! A szent ezüst bűverő hatására a Vámpír üvöltve takarja el az arcát s tehetetlenül hátrál a koporsója szélén. Megmarkolod a hegyes tölgyfacöveket és a kalapácsot, hogy a szívébe szúrd... ám megbotlasz a deszkában és hirtelen kizökkensz az egyensúlyodból!\n\nTedd próbára a Szerencsédet!",
+    "luckCheck": {
+      "luckySection": "101",
+      "unluckySection": "217",
+      "text": "Szerencsés vagy és a cövek épp a fenevad szívébe fúródik, vagy a csapás mellémegy s a feldühödött szörnyeteg rád ront?"
+    },
+    "options": []
+  },
+  "217": {
+    "id": "217",
+    "text": "Balszerencsés voltál! Ejtésed mellémegy a fapadlón, s a dühös Vámpír azonnal lesöpri a fegyveredet a kezedből és gúnyos üvöltéssel fogaival kioltja az életedet...\n\nSajnáljuk, a kalandod itt véget ért.",
+    "options": []
+  },
+  "101": {
+    "id": "101",
+    "text": "Hihetetlen Szerencse! A vetődésed hajszálpontos volt: a hegyes facövek egyenesen átfúrja a Vámpír fekete szívét! A fenevad artikulálatlan sikkantással porlik el a szemed láttára és semmivé lesz a sötét hamu.\n\nA hamvak között megpillantasz egy bűvös varázskönyvet, 30 csillogó aranyat, s egy északi ajtóhoz való fémkulcsot, amelybe a legfontosabb 66-os szám van vésve!\n\nBizakodva zsebre teszed őket (+3 Szerencséd is növekedik).",
+    "statChange": {
+      "gold": 30,
+      "luck": 3
+    },
+    "keyGain": 66,
+    "itemGain": ["Vámpír Varázskönyve"],
+    "options": [
+      { "text": "Távozom a nyugati ajtón át és megyek tovább", "next": "380" }
+    ]
+  },
+  "380": {
+    "id": "380",
+    "text": "A nyugati ajtón áthaladva egy szűk, békés kőjáraton kutyagolsz tovább. Nemsokára egy újabb hármas elágazáshoz lyukadsz ki. Észak felől forró kénes s zsarátnoki száraz meleg áramlik feléd, dél felől pedig sötét, mély verem tátong.",
+    "options": [
+      { "text": "Gyalogolok észak felé a meleg járatban", "next": "366" }
+    ]
+  },
+  "366": {
+    "id": "366",
+    "text": "Észak felé mész, s a levegő szinte égeti a tüdődet. Kilépsz egy kolosszális, lángok vörös fényében úszó gigantikus lávabarlangba. Legnagyobb megdöbbenésedre s rémületedre egy hatalmas, legalább 15 méteres vörös pikkelyes, félelmetes fenevad – a Tűzhegy Sárkánya őrzi a belső szentély bejáratát! \n\nHirtelen feléd fordítja fejét, orrcimpáiból hamu és parázs gomolyog s vakító lángcsóvát készül rád okádni!",
+    "options": [
+      { "text": "Elkiáltom magam s megidézem Di Maggio bűvös jelszavait!", "next": "26", "requiresItem": "Vámpír Varázskönyve" },
+      { "text": "Kardot rántok s megkísérlek megküzdeni a gigantikus Sárkánnyal!", "next": "152" }
+    ]
+  },
+  "152": {
+    "id": "152",
+    "text": "A Sárkány egyetlen hatalmas, pusztító tűznyelvvel árasztja el a lávabarlangot! Ha nincs varázsige, elképesztően nehéz viadal áll előtted a túlélésért!",
+    "combat": {
+      "monsterName": "A Tűzhegy Sárkánya",
+      "skill": 10,
+      "stamina": 12,
+      "winSection": "371"
+    },
+    "options": []
+  },
+  "26": {
+    "id": "26",
+    "text": "A fejed kapkodva, az utolsó pillanatban emeled magasba a karodat s fennhangon elkiáltod a részeg orkok füzetéből tanult mágikus Di Maggio szavakat:\n\n'Ekil Erif, Ekam Erif, Erif Erif Di Maggio!'\n\nCsodák csodája! Amint a szavak elhagyják a szádat, a vakító lángcsóva hirtelen megáll a levegőben, a Sárkány fojtogató tüze visszacsap saját torkába! A fenevad artikulálatlan üvöltéssel s fájdalmában fejét fogdosva dől a mély lávagödör sötétjébe, s a belső szentély útja teljesen szabaddá válik előtted!\n\nHihetetlen bátor tett! Kapsz +3 Szerencsét.",
+    "statChange": {
+      "luck": 3
+    },
+    "options": [
+      { "text": "Diadalmasan haladok tovább észak felé", "next": "371" }
+    ]
+  },
+  "371": {
+    "id": "371",
+    "text": "A sárkány barlangja után a levegő kitisztul, s fenségesen megnyugszol. Egy utolsó kanyar után egy elképesztően elegánsan berendezett, pazar lakosztály elé érsz. \n\nAz íróasztal mögé ágyazódva egy pici, törékeny és ősz szakállú öregembert látsz békésen egy kártyapaklival játszadozni. Ő maga gyanúsan nem más, mint a Tűzhegy sötét ura, Zagor a Varázsló!\n\nMit teszel?",
+    "options": [
+      { "text": "Kardomat meglendítve azonnal megrohamozom a gonoszt!", "next": "324" },
+      { "text": "Udvariasan és csendesen odalépek és üdvözlöm", "next": "356" }
+    ]
+  },
+  "324": {
+    "id": "324",
+    "text": "Zagor gúnyos nevetéssel egy szempillantás alatt köddé foszlik a székéből s a mennyezetről kék zsarátnaki villámot sújt le a hátad közepére! Rémülten fújtatsz a sebből, miközben a kép elhomályosul s az asztal mögött lassan feltámad gigantikus, palástos sötét varázsalakja, hogy megsemmisítsen!\n\n(-3 ÉLETERŐ pontot veszítesz az ármányos lesből sújtó tűzből!)",
+    "statChange": {
+      "stamina": -3
+    },
+    "options": [
+      { "text": "Fájó sebekkel előhúzom a kardomat s küzdök!", "next": "358" }
+    ]
+  },
+  "356": {
+    "id": "356",
+    "text": "Udvariasan lépsz be a szobába, ám amint a közelébe érsz, az öregember arcáról lehullik a maszk: fenségesen és fenyegetően magasodik fel, rongyai bársonyból és aranyból szőtt bűvös palásttá változnak, szemeiből gyűlölet s fekete mágia izzik!\n\n'- Már vártalak, te vakmerő csavargó! Készen állsz az utolsó, halálos kártyajátékra? -'\n\nCsapásra emeled fegyvered s kezdetét veszi a végső összecsapás!",
+    "options": [
+      { "text": "Támadásra fel! Megküzdök Zagorral!", "next": "358" }
+    ]
+  },
+  "358": {
+    "id": "358",
+    "text": "Te állsz szemben Zagorral, a Tűzhegy legfélelmetesebb Uralkodójával a mindent eldöntő, epikus végső harcban!",
+    "combat": {
+      "monsterName": "Zagor, a Varázsló",
+      "skill": 11,
+      "stamina": 18,
+      "winSection": "396"
+    },
+    "options": []
+  },
+  "396": {
+    "id": "396",
+    "text": "Hihetetlen! Hősi kardod utolsó hatalmas csapása porrá zúzza Zagor bűvös palástját és a gonosz varázsló éktelen ordítással foszlik el a semmibe! Sikerült, legyőzted a mindenség sötét Uralkodóját!\n\nA szoba közepén ott áll a pazarul díszített, kettős lakattal lezárt ikonikus Varázslóláda, amely Steve Jackson legendái szerint a világ legnagyobb kincseit s a bűbájok nagykönyvét rejti!\n\nDe sehol nincs nálad zsákmánykulcs. Óvatosan átvizsgálod a nálad lévő fegyvereket és kulcscsomókat. Vajon megvannak az értékes zsákmánykulcsok a kalandod során?",
+    "isFinalChestCheck": true,
+    "options": []
+  },
+  "186": {
+    "id": "186",
+    "text": "Eszményi diadal! Behelyezed a nálad lévő három rozsdás bronzkulcsot a láda zárjaiba s lassan elfordítod őket...\n\nHalk kattanások kíséretében a súlyos tölgyfa fedél lassan felnyílik, s elvakít a több mint ezer aranypénz, mesés rubinok, gyémántok s gyöngyök fenséges ragyogása! A kincsek alatt megleled Zagor titkos bűvös nagykönyvét is, amellyel innentől kezdve te vagy a Tűzhegy Új, igazságos Uralkodója!\n\nKincskeresésed csodás győzelemmel véget ért! Gratulálunk a nagyszerű, sikeres végigjátszáshoz!",
+    "options": []
+  }
+}
